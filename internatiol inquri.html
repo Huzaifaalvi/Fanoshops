@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	.container{
+		height: 1480px;
+		width: 1280px;
+		background-color: red;
+		margin-top: 1.3px;
+		margin: auto
+	}
+	.navbar{
+		height: 5%;
+		width: 100%;
+		float: left;
+		background-color:black;
+	    position: relative;
+		
+		
+	}
+	.navbar ul{
+		list-style-type: none;
+		margin-left: 22%;
+		
+		
+	}
+	.navbar ul li{
+		
+		float:left;
+		position: relative;
+		border-radius: 0px;
+        color:aliceblue;
+		text-align: center;
+		padding-right: 8%
+		
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		padding: 22% 0% 0% 0%;
+		display: block;
+		font-size: 20px;
+		color: whitesmoke;
+	}
+	.navbar ul li a:hover{
+		text-decoration: underline;
+
+	}
+	
+	
+	
+  	
+	.navbar ul  ul{
+		position: absolute;
+        margin-left: -87%;
+		background-color:rgba(0,0,0,0.8);
+        margin-top: 17%;
+		border: 1px solid white;
+		border-radius: 8px;
+		overflow: hidden;
+		width: 200px;
+		visibility: hidden;
+
+		
+	}
+	.navbar ul li:hover ul{
+		visibility: visible
+	}
+	.navbar ul li ul li{
+        margin-right: 20px;	
+		float: none;;
+		margin-top: -5px
+		
+	}
+	
+	.arrow{
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid #fff;
+		right: 64%;
+		top: 100%;
+		display: none;
+		transition-delay: 2s
+	}
+	.navbar ul li:hover .arrow{
+		display: block;
+		
+	}
+	
+	
+	.logo{
+		height:160%;
+		width: 13%;
+		float: left;
+		margin-left: 10%;
+		margin-top: -2%;
+		
+	}
+	.content{
+		height: 105%;
+		width: 100%;
+		background-color: white;
+		float: left
+	}
+		.pic{
+		height: 200px;
+		width: 1280px;
+		float: left;;
+	}
+	.para{
+		height: 400px;
+		width: 600px;
+		float: left;
+	}
+	p{
+		padding-left: 5%;
+		font-size: 17px;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		color: hsla(0,7%,19%,1.00);
+		padding-top: 3%;
+		
+	}
+	h3{padding-top: 1%;padding-left: 5%;font-size: 22px;}
+	p.term{
+		padding-top: 0px;
+	}
+	.totalwidth{height: 100px;width: 1200px;float: left;border-bottom: 2px solid black;
+	}
+	
+	.pak{height: 100px;width: 200px;float: left;margin-left: 5%;
+	}
+	
+	
+	.footer2{
+		height: 23%;
+		width: 100%;
+		background-color:black;
+		float: left;
+	
+	}
+	.usefullink{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	
+	.usefullink h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%;
+	}
+	.usefullink ul {
+		color: white;
+		list-style-type: none;
+		
+	}
+	.usefullink ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.usefullink ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.usefullink a{
+		color: white;
+		text-decoration: none
+	}
+	.quicklinks{
+		height:100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	.quicklinks h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.quicklinks ul {
+		color: white;
+		list-style-type: none;	
+	}
+	.quicklinks ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.quicklinks ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.quicklinks a{
+		color: white;
+		text-decoration: none
+	}
+	.adress{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+		
+	}
+	.adress h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.adress p{
+	    padding: 0% 0% 0% 11%;
+		margin-top: -1%;
+		color:#646363;
+		
+	}
+	
+	
+.footer1{
+		height: 10%;
+		width: 100%;
+		background-color: black;
+		float: left
+	}
+.advertismentname{
+		height: 10%;
+		width: 24%;
+		float: left;
+		margin-top: 6.3%
+	}
+	.advertismentname h2{
+		color: white;
+		margin-top: -1%;
+		font-size: 20px
+	}
+	.advertismentpicture{
+		height: 60%;
+		width: 24%;
+		background-color:lightgray;
+		float:left;
+		margin-top: -10px
+	}
+	.advertismentpicture h2{
+		color:rgba(0,0,0,0.5);
+		text-align: center;
+		margin-top: 20%;
+		font-size: 22px
+	}
+	.advertismentpicture p{
+		font-size: 16px;
+		text-align: center;
+		margin-top: -6%;
+		color:rgba(0,0,0,0.6)
+	}
+		
+	
+		
+
+	
+</style>
+</head>
+
+<body>
+	<div class="container">
+		
+      
+       <div class="navbar">
+        <div class="logo">
+       	<img src="fof2.png" height="100%" width="100%">
+       </div>
+       <ul >
+       <li>
+       	<li><a href="index.html">Home</a></li>
+       	<li id="flip"><a href="gallery/Gallery.html">Gallery</a>
+       	
+       	</li>
+       	<li style="margin-top:  5px"><a href="#">Fans</a>
+       	<div class="arrow"></div>
+			<ul >
+      		<li><a href="fanpedestalfan.html"> Pedestal Fan</a></li>
+       		<li ><a href="pakcellingfan.html"> Celling Fan </a></li>
+       		<li><a href="fanlouvrefan.html">   louvre Fan  </a></li>
+       		<li><a href="fantablefan.html">    Table Fan   </a></li>
+       		<li><a href="fan mist fan.html">     Mist Fan    </a></li>
+       		<li><a href="fan bracket fan.html">    Bracket Fan    </a></li>
+       	</ul>
+       	</li>
+       	<li><a href="About FAN O FAN/about page.html">About Us</a></li>
+       	<li><a href="CONTACT US WITH TEAM/Contact Us.....html">Contact Us</a></li>
+       	<li><a href="feedback.html">Feedback</a></li>
+       
+       	</li>
+       </ul>
+       </div>
+	<div class="content">
+		<div class="pic"><img src="Capture.JPG" height="100%" width="100%"></div>
+		<div class="para"><p>As market leaders and trend-setters, we have not only set standards locally but also internationally; when it comes to our export network. Our fans are the first in the industry to have been rewarded with the CE Mark by RW TUV NORD.<br><br>
+
+		We are also ISO9001 certified and challenged industry norms time and again. Our efficient packaging allows for minimum freight cost per piece without compromising on product safeguard.<br><br>
+
+		Not only this, we offer one of the Largest Selections consisting of 10 Distinct Categories of Fans in Two Series, totalling over an astounding 120 Models. The satisfaction of all our stakeholders is what matters most at Royal which is why we provide customized products in accordance with your needs.</p>
+		
+		<h3>Terms</h3>
+		<p class="term">* Order Quantity: One 20/40ft high cube container</p>
+		<p class="term">* Terms of Sale: C&F/FOB</p>
+		<p class="term">* Payment Terms: Irrevocable LC at sight/advance payment</p>
+		<p class="term">* Brand: FAN o FAN</p>
+		<p class="term">* Validity of an Offer: All our offers are usually valid for a period of 7 working     days from the date of issuance. However, prices may change without prior notice.</p>
+		<p class="term">For any Further Queries, please feel free to contact us.</p>
+		<h3>Certifications</h3>
+		<div class="pak"><img src="psqca_logo.png"></div>
+		
+		<div class="totalwidth">
+		<p>The Pakistan Standards and Quality Control Authority, under the Ministry of Science and Technology, is the national standardization body.In performing its duties and functions, PSQCA is governed by the PSQCA Act, 1996.
+		www.psqca.com.pk</p></div>
+		
+		<div class="pak"><img src="iso_logo.png"></div>
+		
+		<div class="totalwidth">
+		<p>ISO (International Organization for Standardization) is the world’s largest developer and publisher of International Standards.
+		www.iso.org</p></div>
+		
+		<div class="pak"><img src="ce_logo.png"></div>
+		
+		<div class="totalwidth">
+		<p>The CE mark is a marking according to EU law in connection with the product safety required by the EU. By affixing the CE marking on a product, the manufacturer confirms that the product satisfies the applicable European directives.
+		www.ce-mark.com</p></div>
+		
+		</div>
+		
+	</div>
+		
+		
+		
+		
+		
+		<div  class="footer2">
+<div class="usefullink">
+<h2>Useful Link</h2>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Company</a></li>
+		<li><a href="privacy page.html">Privacy Policy</a></li>
+		<li><a href="CONTACT US WITH TEAM/Contact Us.....html">Contact Us</a></li>
+	</ul>
+	</div>
+	<div class="quicklinks">
+		<h2>Quick Link</h2>
+	<ul>
+		<li><a href="internatiol inquri.html">International Inquiries</a></li>
+		<li><a href="responsibilty.html">Responsibility</a></li>
+		<li><a href="guarantee page.html">Lifetime Guarantee</a></li>
+	</ul>
+	</div>
+	<div class="adress">
+		<h2>Factory Adress</h2>
+		<p>I.I Chundrigar Rd Karachi,Pakistan</p>
+		<p>Phone:03420803886</p>
+		<p>Phone:03112884646</p>
+		<p>Phone:03312524916</p>
+		
+	</div>
+	<div class="advertismentname">
+		<h2>Advertisment Section</h2>
+	</div>
+	<div class="advertismentpicture">
+		<h2>Ad Here</h2>
+		<p>360x250</p>
+	</div>
+</div>
+<div class="footer1">
+	<img src="Capture.PNG" height="100%" width="100%">
+</div>
+	</div>
+</body>
+</html>

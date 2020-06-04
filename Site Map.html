@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<style>
+	.container{
+		height: 1480px;
+		width: 1280px;
+		margin: auto;
+		background-color: aqua;
+	}	
+	.header{
+		height:20%;
+		width: 100%; 
+		float: left;
+		overflow: hidden;
+		background-color:white
+		
+		
+	}
+	
+	
+	.navbar{
+		height: 5%;
+		width: 100%;
+		float: left;
+		margin-top: -5%;
+		background-color:black
+		
+		
+	}
+	.navbar ul{
+		list-style-type: none;
+		margin-left: 22%;
+		
+		
+	}
+	.navbar ul li{
+		
+		float:left;
+		position: relative;
+		border-radius: 0px;
+        color:aliceblue;
+		text-align: center;
+		padding-right: 7%;
+		
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		padding: 15% 0% 0% 0%;
+		display: block;
+		font-size: 20px;
+		color: whitesmoke;
+	}
+	.navbar ul li a:hover{
+		text-decoration: underline;
+
+	}
+	
+	
+	
+  	
+	.navbar ul  ul{
+		position: absolute;
+        margin-left: -94%;
+		background-color:rgba(0,0,0,0.8);
+        margin-top: 18%;
+		border: 1px solid white;
+		border-radius: 8px;
+		overflow: hidden;
+		width: 200px;
+		visibility: hidden;
+
+		
+	}
+	.navbar ul li:hover ul{
+		visibility: visible
+	}
+	.navbar ul li ul li{
+      margin-right: 20px;	
+	   padding-bottom: 5%;
+		float: none;
+		
+	}
+	
+	.arrow{
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid #fff;
+		right: %;
+		top: 100%;
+		display: none;
+		transition-delay: 2s
+	}
+	.navbar ul li:hover .arrow{
+		display: block;
+		
+	}
+	
+	
+	.logo{
+		height:160%;
+		width: 13%;
+		float: left;
+		margin-left: 10%;
+		margin-top: -2%;
+		
+	}
+	.content{
+		height:60%;
+		width: 100%;
+		background-color:white;
+		float: left
+	}
+	.img{
+		height: 70%;
+		width: 100%;
+		float: left;
+		margin-top: 10%;
+		border: 1px solid grey
+	}
+		.footer2{
+		height: 20%;
+		width: 100%;
+		background-color:black;
+		float: left;
+		margin-top: 0%
+		
+		
+	}
+	.usefullink{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	
+	.usefullink h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%;
+	}
+	.usefullink ul {
+		color: white;
+		list-style-type: none;
+		
+	}
+	.usefullink ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.usefullink ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.usefullink a{
+		color: white;
+		text-decoration: none
+	}
+	.quicklinks{
+		height:100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	.quicklinks h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.quicklinks ul {
+		color: white;
+		list-style-type: none;	
+	}
+	.quicklinks ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.quicklinks ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.quicklinks a{
+		color: white;
+		text-decoration: none
+	}
+	.adress{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+		
+	}
+	.adress h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.adress p{
+	    padding: 0% 0% 0% 11%;
+		margin-top: -1%;
+		color:#646363;
+		
+	}
+	.map{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+	}
+	
+.footer1{
+		height: 10%;
+		width: 100%;
+		background-color: black;
+		float: left
+	}
+	
+	.advertismentname{
+		height: 10%;
+		width: 24%;
+		float: left;
+		margin-top: 6.3%
+	}
+	.advertismentname h2{
+		color: white;
+		margin-top: -1%;
+		font-size: 21px
+	}
+	.advertismentpicture{
+		height: 60%;
+		width: 24%;
+		background-color:lightgray;
+		float:left
+	}
+	.advertismentpicture h2{
+		color:rgba(0,0,0,0.5);
+		text-align: center;
+		margin-top: 20%
+	}
+	.advertismentpicture p{
+		font-size: 20px;
+		text-align: center;
+		margin-top: -6%;
+		color:rgba(0,0,0,0.6)
+	}
+	
+	
+	
+	
+</style>
+
+<body>
+<div class="container">
+	<div class="header">
+	<img src= "havells-banner-enticer.jpg" height="100%" width="100%">
+	</div>
+      
+       <div class="navbar">
+        <div class="logo">
+       	<img src="fof2.png" height="100%" width="100%">
+       </div>
+       <ul>
+       <li>
+       	<li><a href="index.html">Home</a></li>
+       	<li id="flip"><a href="gallery/Gallery.html">Gallery</a>
+       	
+       	</li>
+       	<li class style="margin-top: 5px;"><a href="#">Fans</a>
+       	<div class="arrow"></div>
+			<ul >
+      		<li><a href="fanpedestalfan.html"> Pedestal Fan</a></li>
+       		<li ><a href="pakcellingfan.html"> Celling Fan </a></li>
+       		<li><a href="fanlouvrefan.html">   louvre Fan  </a></li>
+       		<li><a href="fantablefan.html">    Table Fan   </a></li>
+       		<li><a href="fan mist fan.html">     Mist Fan    </a></li>
+       		<li><a href="fan bracket fan.html"> Bracket Fan </a></li>
+       	</ul>
+       	</li>
+       	<li><a href="About FAN O FAN/about page.html">About Us</a></li>
+       	<li><a href="CONTACT US WITH TEAM/Contact Us.html">Contact Us</a></li>
+       	<li><a href="feedback.html">Feedback</a></li>
+       	<li><a href="Site Map.html">Site Map</a></li>
+       	</li>
+       </ul>
+       </div>
+	<div class="content">
+		<div  class="img">
+			<img src="Capture of site map.JPG" height="100%" width="100%">
+		</div>
+	</div>
+ <div  class="footer2">
+<div class="usefullink">
+<h2>Useful Link</h2>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Company</a></li>
+		<li><a href="privacy page.html">Privacy Policy</a></li>
+		<li><a href="CONTACT US WITH TEAM/Contact Us.....html">Contact Us</a></li>
+	</ul>
+	</div>
+	<div class="quicklinks">
+		<h2>Quick Link</h2>
+	<ul>
+		<li><a href="internatiol inquri.html">International Inquiries</a></li>
+		<li><a href="responsibilty.html">Responsibility</a></li>
+		<li><a href="guarantee page.html">Lifetime Guarantee</a></li>
+	</ul>
+	</div>
+	<div class="adress">
+		<h2>Factory Adress</h2>
+		<p>I.I Chundrigar Rd Karachi,Pakistan</p>
+		<p>Phone:03420803886</p>
+		<p>Phone:03112884646</p>
+		<p>Phone:03312524916</p>
+		
+	</div>
+	<div class="advertismentname">
+		<h2>Advertisment Section</h2>
+	</div>
+	<div class="advertismentpicture">
+		<h2>Ad Here</h2>
+		<p>360x250</p>
+	</div>
+</div>
+<div class="footer1">
+	<img src="Capture.PNG" height="100%" width="100%">
+</div>	
+       
+</div>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+ <script src="js/main.js"></script>
+<script>
+	$(document).ready(function(){
+    $("#flip").hover(function(){
+        $("#panel").slideToggle("slow");
+		
+    });
+});	
+	</script>
+<style>
+	body{
+		background-image: url(#);
+		background-attachment: fixed;
+		background-size: cover;
+		background-color: white
+	}
+	
+	.container{
+		height: 2300px;
+		width: 1280px;
+		background-color:white;
+		margin: auto
+	}
+.navbar{
+		height: 4%;
+		width: 100%;
+		float: left;
+		background-color:black;
+	    position: static
+		
+		
+	}
+	.navbar ul{
+		list-style-type: none;
+		margin-left: 22%;
+		
+		
+	}
+	.navbar ul li{
+		
+		float:left;
+		position: relative;
+		border-radius: 0px;
+        color:aliceblue;
+		text-align: center;
+		padding-right: 8%
+		
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		padding: 22% 0% 0% 0%;
+		display: block;
+		font-size: 20px;
+		color: whitesmoke;
+	}
+	.navbar ul li a:hover{
+		text-decoration: underline;
+
+	}
+	
+	
+	
+  	
+	.navbar ul  ul{
+		position: absolute;
+    margin-left: -87%;
+		background-color:rgba(0,0,0,0.8);
+    margin-top: 17%;
+		border: 1px solid white;
+		border-radius: 8px;
+		overflow: hidden;
+		width: 200px;
+		visibility: hidden;
+
+		
+	}
+	.navbar ul li:hover ul{
+		visibility: visible
+	}
+	.navbar ul li ul li{
+      margin-right: 20px;	
+		float: none;;
+		margin-top: -5px
+		
+	}
+	
+	.arrow{
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid #fff;
+		right: 64%;
+		top: 100%;
+		display: none;
+		transition-delay: 2s
+	}
+	.navbar ul li:hover .arrow{
+		display: block;
+		
+	}
+	
+	
+	.logo{
+		height:160%;
+		width: 13%;
+		float: left;
+		margin-left: 10%;
+		margin-top: -2%;
+		
+	}
+	
+	
+	.banaer{
+		height: 13%;
+		width: 85%;
+		float: left;
+		margin-left: 7.5%;
+		margin-top: 3%
+	}
+	.heading{
+		height: 7%;
+		width: 10%;
+		float: left;
+		margin-left: 45%
+	}
+	.heading h1{
+		text-align: center;
+		font-size: 40px;
+		
+	}
+	
+	.introduction{
+		height: 13%;
+		width: 80%;
+		float: left;
+		margin-left: 12%;
+		font-size: 18px;
+		margin-top: -7%;
+	}
+	.content{
+		height: 50%;
+		width: 90%;
+		background-color:white;
+		float: left;
+		margin-left: 5%;
+		margin-top: -10%
+	}
+	.fanintro{
+		height: 3%;
+		width: 100%;
+		float: left;
+		margin-top: 3%;
+		text-align: center;
+		font-size: 18px
+	}
+	.fanimg{
+		height: 50%;
+		width: 80%;
+		margin-left: 10%;
+		float: left;
+	}
+	.fantext{
+		height: 50%;
+		width: 100%;
+		float: left
+	}
+	.fantext p b{
+		margin-left: 1%;
+		float: left
+	}
+	.fantext p{
+		font-size: 18px;
+		margin-left: 2%;
+		
+	}
+	.footer2{
+		height: 13%;
+		width: 100%;
+		background-color:black;
+		float: left;
+		margin-top: 15%
+		
+	}
+	.usefullink{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	
+	.usefullink h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%;
+	}
+	.usefullink ul {
+		color: white;
+		list-style-type: none;
+		
+	}
+	.usefullink ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.usefullink ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.usefullink a{
+		color: white;
+		text-decoration: none
+	}
+	.quicklinks{
+		height:100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	.quicklinks h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.quicklinks ul {
+		color: white;
+		list-style-type: none;	
+	}
+	.quicklinks ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.quicklinks ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.quicklinks a{
+		color: white;
+		text-decoration: none
+	}
+	.adress{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+		
+	}
+	.adress h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.adress p{
+	    padding: 0% 0% 0% 11%;
+		margin-top: -1%;
+		color:#646363;
+		
+	}
+	
+	
+.footer1{
+		height: 5%;
+		width: 100%;
+		background-color: black;
+		float: left
+	}
+		.advertismentname{
+		height: 10%;
+		width: 24%;
+		float: left;
+		margin-top: 6.3%
+	}
+	.advertismentname h2{
+		color: white;
+		margin-top: -1%;
+		font-size: 21px
+	}
+	.advertismentpicture{
+		height: 60%;
+		width: 24%;
+		background-color:lightgray;
+		float:left
+	}
+	.advertismentpicture h2{
+		color:rgba(0,0,0,0.5);
+		text-align: center;
+		margin-top: 20%
+	}
+	.advertismentpicture p{
+		font-size: 20px;
+		text-align: center;
+		margin-top: -6%;
+		color:rgba(0,0,0,0.6)
+	}
+	
+	
+
+</style>
+</head>
+
+<body>
+<div class="container">
+	    <div class="navbar">
+       <div class="logo">
+       	<img src="fof2.png" height="100%" width="100%">
+       </div>
+       <ul >
+       <li>
+       	<li><a href="index.html">Home</a></li>
+       	<li id="flip"><a href="gallery/Gallery.html">Gallery</a>
+       	
+       	</li>
+       	<li style="margin-top: 5px"><a href="#">Fans</a>
+       	<div class="arrow"></div>
+			<ul >
+      		<li><a href="fanpedestalfan.html"> Pedestal Fan</a></li>
+       		<li ><a href="pakcellingfan.html"> Celling Fan </a></li>
+       		<li><a href="fanlouvrefan.html">   louvre Fan  </a></li>
+       		<li><a href="fantablefan.html">    Table Fan   </a></li>
+       		<li><a href="fan mist fan.html">     Mist Fan    </a></li>
+       		<li><a href="fan bracket fan.html">    Bracket Fan    </a></li>
+       	</ul>
+       	</li>
+       	<li><a href="About FAN O FAN/about page.html">About Us</a></li>
+       	<li><a href="CONTACT US WITH TEAM/Contact Us.html">Contact Us</a></li>
+       	<li><a href="feedback.html">Feedback</a></li>
+       	</li>
+       </ul>
+       </div>
+	
+	<div class="banaer">
+		<img src="quality-coverphoto2.jpg" height="100%" width="100%">
+	</div>
+	<div class="heading">
+		<h1>Quality</h1>
+		
+	</div>
+	<div class="introduction">
+		<p>Because we care about your wallet and the World, G.F.C focuses on the production of energy conserving fans since the last twenty years. Special raw materials for energy saving fans being used include Electrical Silicon Steel Sheet, Pure Enameled Copper Wire, High Quality Ball Bearings and Aerodynamically Designed fan Blades, made on most modern plants with a highly qualified labour force.To safeguard our incomparable quality, the copper wire is also produced at G.F.C’s own Wire Drawing Plant since 1987. And to ensure unparalleled performance, our products are tested several times before they are shipped to you.</p>
+	</div>
+	<div class="content">
+		<div class="fanintro">
+			<p>Here is the detail explanation of GFC ceiling fan components and the reason behind it being the best quality fan:</p>
+		</div>
+		<div class="fanimg">
+			<img src="fanexplanation.PNG" height="100%" width="100%">
+		</div>
+		<div class="fantext">
+			<p><b>Fan Housing:</b></p>
+			<p> Produced from superior quality aluminum alloy on high pressure die casting machines, fan housing defines external shape of the fan. High quality material not only gives strength and longevity in performance, but it also allows fan color to remain fresh and long lasting.</p>
+			<p><b>Fan Stator (Motor):</b></p>
+			<p>Made of Silicon Electrical Steel Sheets and winded with 99.99% pure enameled copper wire, fan stator is the core technology in manufacturing electric fans. Electrical steel sheet is especially designed for electrical motors to increase their efficiency and together with 99.99% copper wire, it ensures minimal losses when current revolves stator to create magnetic flux in rotor. Moreover, GFC stator is insulated with "E" grade varnish to protect from electric shock and voltage fluctuation.</p>
+			<p><b>Fan rotor:</b></p>
+			<p>Made of Silicon Electrical Steel Sheets and filled with prime quality Aluminum Alloy, Rotor is the rotating part of the fan motor. Rotor creates its magnetic power by following current in stator. Rotor is attached to the fan housing and fan blades. Electrical steel sheet together with prime quality Aluminum Alloy increases rotational efficiency of the fan motor.</p>
+			<p><b>Double Ball Bearing:</b></p>
+			<p>High quality steel ball bearings ensures negligible frictional loses when fan motor is revolving, resulting in improved motor efficiency. Excellent bearing quality ensure long working hours of fan running with noiseless operation.</p>
+			<p><b>Axle/shaft:</b></p>
+			<p>Shaft is made of mild steel on centerless grinding machines for precision bearing sizes, which maintains rotation of electric fan wobble free.</p>
+			<p><b>Paint: </b></p>
+			<p> Powder paint is used to keep fans color fresh, long lasting and rust proof.</p>
+			<p><b>Capacitor:</b></p>
+			<p>Single phase capacitor is also manufactured in our own plant. Core element of capacitor is wound with low losses metalized film of thickness 8 micron.</p>
+			<p><b>Neck Ceiling fan: </b></p>
+			<p> Ceiling neck is made of cast iron and is designed to control the vibration of ceiling fan body.</p>
+			<p><b>Single core wire:</b></p>
+			<p>Single core wire is made of best quality copper wire, which means minimum resistance, optimal performance and longevity.</p>
+			<p><b>Blades:</b></p>
+			<p> Blades are made of aluminum alloy sheet with proper hardness. Moreover, Blades shape and bending angles are aerodynamically designed for maximum air delivery and quiet operation.</p>
+		</div>
+	</div>
+	
+	<div  class="footer2">
+<div class="usefullink">
+<h2>Useful Link</h2>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Company</a></li>
+		<li><a href="privacy page.html">Privacy Policy</a></li>
+		<li><a href="CONTACT US WITH TEAM/Contact Us.....html">Contact Us</a></li>
+	</ul>
+	</div>
+	<div class="quicklinks">
+		<h2>Quick Link</h2>
+	<ul>
+		<li><a href="internatiol inquri.html">International Inquiries</a></li>
+		<li><a href="responsibilty.html">Responsibility</a></li>
+		<li><a href="guarantee page.html">Lifetime Guarantee</a></li>
+	</ul>
+	</div>
+	<div class="adress">
+		<h2>Factory Adress</h2>
+		<p>I.I Chundrigar Rd Karachi,Pakistan</p>
+		<p>Phone:03420803886</p>
+		<p>Phone:03112884646</p>
+		<p>Phone:03312524916</p>
+		
+	</div>
+	<div class="advertismentname">
+		<h2>Advertisment Section</h2>
+	</div>
+	<div class="advertismentpicture">
+		<h2>Ad Here</h2>
+		<p>360x250</p>
+	</div>
+</div>
+<div class="footer1">
+	<img src="Capture.PNG" height="100%" width="100%">
+</div>
+
+</div>
+</body>
+</html>

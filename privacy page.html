@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	.container{
+		height: 1400px;
+		width: 1280px;
+		background-color: red;
+		margin: auto;
+	}
+	.navbar{
+		height: 6%;
+		width: 100%;
+		float: left;
+		background-color:black;
+	    position: static
+		
+		
+	}
+	.navbar ul{
+		list-style-type: none;
+		margin-left: 22%;
+		
+		
+	}
+	.navbar ul li{
+		
+		float:left;
+		position: relative;
+		border-radius: 0px;
+        color:aliceblue;
+		text-align: center;
+		padding-right: 8%
+		
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		padding: 20% 0% 0% 0%;
+		display: block;
+		font-size: 20px;
+		color: whitesmoke;
+	}
+	.navbar ul li a:hover{
+		text-decoration: underline;
+
+	}
+	
+	
+	
+  	
+	.navbar ul  ul{
+		position: absolute;
+    margin-left: -87%;
+		background-color:rgba(0,0,0,0.8);
+    margin-top: 17%;
+		border: 1px solid white;
+		border-radius: 8px;
+		overflow: hidden;
+		width: 200px;
+		visibility: hidden;
+
+		
+	}
+	.navbar ul li:hover ul{
+		visibility: visible
+	}
+	.navbar ul li ul li{
+      margin-right: 20px;	
+		float: none;;
+		margin-top: -5px
+		
+	}
+	
+	.arrow{
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid #fff;
+		right: 64%;
+		top: 100%;
+		display: none;
+		transition-delay: 2s
+	}
+	.navbar ul li:hover .arrow{
+		display: block;
+		
+	}
+	
+	
+	.logo{
+		height:160%;
+		width: 13%;
+		float: left;
+		margin-left: 10%;
+		margin-top: -2%;
+		
+	}
+	.content{
+		height:75%;
+		width: 100%;
+		background-color:white;
+		float: 
+	}
+	.information{
+		height: 900px;
+		width: 1300px;
+		margin-top: 20%;
+		float: left
+		
+	}
+	.pic{
+		
+		float: left;
+		height: 400px;
+		width: 400px;
+		}
+	h1{
+		font-family: allura;
+		padding-left:32%;
+		color:black;
+		font-family: algerian;	;
+		font-size: 30px
+	}
+	p{
+		color:#1F1919;
+		padding-left: 32%;
+		font-size: 15px;
+		font-family:"berkshire-swash";
+	}
+	h2{font-family: algerian;
+		padding-left:32%;
+		color:black;
+		font-size: 30px
+	}
+	h3{
+		
+		padding-right: 20%;
+		padding-top: 3%;
+		padding-left: 5%;
+		font-size: 20px;
+		font-family: algerian;
+	}
+	p.side{
+		padding-right: 20%;
+		padding-left: 5%;
+	}
+	  	.footer2{
+		height: 22%;
+		width: 100%;
+		background-color:black;
+		float: left;
+		margin-top: -15%
+		
+	}
+	.usefullink{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	
+	.usefullink h2{
+		color:white;
+		font-size: 20px;
+		margin-left: -20%;
+	}
+	.usefullink ul {
+		color: white;
+		list-style-type: none;
+		
+	}
+	.usefullink ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.usefullink ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.usefullink a{
+		color: white;
+		text-decoration: none
+	}
+	.quicklinks{
+		height:100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+	}
+	.quicklinks h2{
+		color:white;
+		font-size: 20px;
+		margin-left: -20%
+	}
+	.quicklinks ul {
+		color: white;
+		list-style-type: none;	
+	}
+	.quicklinks ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.quicklinks ul li a:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.quicklinks a{
+		color: white;
+		text-decoration: none
+	}
+	.adress{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		margin-top: 5%
+		
+	}
+	.adress h2{
+		color:white;
+		font-size: 20px;
+		margin-left: -20%
+	}
+	.adress p{
+	    padding: 0% 0% 0% 11%;
+		margin-top: -1%;
+		color:#646363;
+		
+	}
+	.map{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+	}
+  .footer1{
+		height: 8%;
+		width: 100%;
+		background-color: black;
+		float: left
+	}
+	.advertismentname{
+		height: 10%;
+		width: 24%;
+		float: left;
+		margin-top: 6%;
+		
+	}
+	.advertismentname h2{
+		color: white;
+		margin-top: 1%;
+		font-size: 21px;
+		margin-left: -31%;
+		font-size: 20px
+	}
+	.advertismentpicture{
+		height: 60%;
+		width: 24%;
+		background-color:lightgray;
+		float:left;
+		margin-left:0%;
+		margin-top: 2px
+	}
+	.advertismentpicture h2{
+		color:rgba(0,0,0,0.5);
+		margin-top: 20%;
+		font-size: 25px;
+		margin-left: 2%
+	}
+	.advertismentpicture p{
+		font-size: 18px;
+		margin-top: -8%;
+		color:rgba(0,0,0,0.6);
+		margin-left: 7%
+	}
+	
+	
+	
+	
+</style>
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+       <div class="logo">
+       	<img src="fof2.png" height="100%" width="100%">
+       </div>
+       <ul >
+       <li>
+       	<li><a href="index.html">Home</a></li>
+       	<li id="flip"><a href="gallery/Gallery.html">Gallery</a>
+       	
+       	</li>
+       	<li style="margin-top: 5px"><a href="#">Fans</a>
+       	<div class="arrow"></div>
+			<ul >
+      		<li><a href="fanpedestalfan.html"> Pedestal Fan</a></li>
+       		<li ><a href="pakcellingfan.html"> Celling Fan </a></li>
+       		<li><a href="fanlouvrefan.html">   louvre Fan  </a></li>
+       		<li><a href="fantablefan.html">    Table Fan   </a></li>
+       		<li><a href="fan mist fan.html">     Mist Fan    </a></li>
+       		<li><a href="fan bracket fan.html">    Bracket Fan    </a></li>
+       	</ul>
+       	</li>
+       	<li><a href="About FAN O FAN/about page.html">About Us</a></li>
+       	<li><a href="CONTACT US WITH TEAM/Contact Us.....html">Contact Us</a></li>
+       	<li><a href="feedback.html">Feedback</a></li>
+       	</li>
+       </ul>
+       </div>
+	<div class="content">
+		<div class="information">
+		<div class="pic"><img src="privacy.jpg" height="400px" width="400px"></div>	
+		<h1>Privacy Policy</h1>
+		<p>At PAKISTAN Engineering, we consider corporate responsibility to be an integral part of all our business functions. <br>From Product Design to Sales, our employees are encouraged to be Ethical, Fair and Honest.</p>
+		
+		<h2>Care For planet</h2>
+		<p>We are dedicated to providing Energy Efficient Products, which help our valued consumers conserve energy whilst offering savings <br>for the other wants in Life. For example, Royal Ceiling Fan Deluxe model 56” with 320 RPM consumes 80watts per hour whereas ceiling 56” of most other brands consume up to 110watts. With a daily usage of 15 hours;Each Royal Fan saves approximately 160 units per year.
+		 Leading to a saving of up to Rs. 1300 Per Year.</p>
+		
+		<h2>Care for the Community</h2>
+		<p>First it is necessary to stand on your own two feet. But the minute a man finds himself in that position,<br> the next thing he should do is reach out his arms.”<br>
+		We regard community as a cornerstone of any nation and take initiative to strength our great nation by strengthening the communities<br> within. We partake in a number of programs and ventures, as well as supporting NGO’s to better and strength the community</p>
+		
+		<h3>Care for People</h3>
+		<p class="side">Our diverse and multicultural network of dealers, distributor and customers around our nation and the world, gives us a unique prospective. We believe in happiness over profits, and as such provide a safe, healthy and ethical work environment where all employees are given a chance to grow and are committed to honest, fair and transparent practices when it comes to our customers.</p>
+		
+		
+		
+		
+	</div>
+	</div>
+	<div  class="footer2">
+<div class="usefullink">
+<h2>Useful Link</h2>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#">Company</a></li>
+		<li><a href="privacy page.html">Privacy Policy</a></li>
+		<li><a href="CONTACT US WITH TEAM/Contact Us.....html">Contact Us</a></li>
+	</ul>
+	</div>
+	<div class="quicklinks">
+		<h2>Quick Link</h2>
+	<ul>
+		<li><a href="internatiol inquri.html">International Inquiries</a></li>
+		<li><a href="responsibilty.html">Responsibility</a></li>
+		<li><a href="guarantee page.html">Lifetime Guarantee</a></li>
+	</ul>
+	</div>
+	<div class="adress">
+		<h2>Factory Adress</h2>
+		<p>I.I Chundrigar Rd Karachi,Pakistan</p>
+		<p>Phone:03420803886</p>
+		<p>Phone:03112884646</p>
+		<p>Phone:03312524916</p>
+		
+	</div>
+	<div class="advertismentname">
+		<h2>Advertisment Section</h2>
+	</div>
+	<div class="advertismentpicture">
+		<h2>Ad Here</h2>
+		<p>360x250</p>
+	</div>
+</div>
+<div class="footer1">
+	<img src="Capture.PNG" height="100%" width="100%">
+</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fancellingfan</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+ <script src="js/main.js"></script>
+<script>
+	$(document).ready(function(){
+    $("#flip").hover(function(){
+        $("#panel").slideToggle("slow");
+		
+    });
+});	
+	</script>
+<style>
+	
+.container{
+		height: 1580px;
+	    width: 1280px;
+		margin: auto; 
+		background-color:blue;
+	
+		}
+	
+	.navbar{
+		height: 7%;
+		width: 100%;
+		float: left;
+		background-color: rgba(0,0,0,0.8);
+		
+		
+	}
+	.navbar ul{
+		list-style-type: none;
+		margin-left: 10%;
+		
+	}
+	.navbar ul li{
+		
+		float:left;
+		position: relative;
+	    width: 170px;
+		border-radius: 0px;
+        color:aliceblue;
+		text-align: center
+		
+	}
+	.navbar ul li a{
+		text-decoration: none;
+		padding: 15% 0% 0% 0%;
+		display: block;
+		font-size: 20px;
+		color: whitesmoke
+
+	}
+	
+	.navbar ul li a:hover{
+		color:rgba(241,234,234,0.93);
+		
+		
+	}
+	
+  	
+	.navbar ul  ul{
+		position: absolute;
+		margin-left: -14%;
+		background-color:rgba(0,0,0,0.8);
+		margin-top: 10%;
+		border: 1px solid white;
+		border-radius: 8px;
+		overflow: hidden;
+		width: 100%;
+		visibility: hidden
+		
+	}
+	.navbar ul li:hover ul{
+		visibility: visible
+	}
+	.navbar ul li ul li{
+		text-align: center;
+		margin-left: -20px;
+		
+	}
+	#panel{
+    padding: 100px;
+    display: none;
+    left: -185%;
+    top: 67%;
+    width: 636%;
+    height: 60%;
+    border: none;
+	cursor: pointer;
+		
+	}
+	#img1{
+	height: 90%;
+    width: 15%;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    float: left;
+	transition:transform 2s;
+	overflow: hidden
+	}
+	
+	#panel #img1:hover img{
+	  transform:scale(1.1);
+	}
+	#img2{
+	height: 90%;
+    width: 15%;
+    float: left;
+    top: 5%;
+    position: absolute;
+    left: 18%;
+    overflow: hidden
+	}
+	
+	#panel #img2:hover img{
+			transform:scale(1.1);
+	}
+	
+	#img3{
+	    height: 90%;
+    width: 15%;
+    float: left;
+    top: 5%;
+    position: absolute;
+    left: 34%;
+	overflow: hidden
+	}
+	
+	#panel #img3:hover img{
+			transform:scale(1.1);
+	}
+	
+	#img4{
+	height: 90%;
+    width: 15%;
+    float: left;
+    top: 5%;
+    position: absolute;
+    left: 50%;
+	overflow: hidden
+	}
+	
+	#panel #img4:hover img{
+			transform:scale(1.1);
+	}
+	
+	#img5{
+	height: 90%;
+    width: 15%;
+    float: left;
+    top: 5%;
+    position: absolute;
+    left: 66%;
+	overflow:hidden
+	}
+	
+	#panel #img5:hover img{
+	transform:scale(1.1);
+	}
+	
+	#img6{
+    height: 90%;
+    width: 15%;
+    float: left;
+    top: 5%;
+    position: absolute;
+    left: 82%;
+	overflow: hidden
+	}
+	
+	#panel #img6:hover img{
+			transform:scale(1.1);
+	}
+    
+	.arrow{
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 20px solid #fff;
+		right: 38%;
+		top: 100%;
+		display: none;
+		transition-delay: 2s
+	}
+	.navbar ul li:hover .arrow{
+		display: block;
+		
+	}
+	.content{
+		height: 70%;
+		width: 100%;
+		background-color:white;
+		float:left;
+		overflow: hidden
+		
+	}
+	
+	.content .h1{
+		color: darkblue;
+		float: left;
+		font-size: 15px;
+		font-family: 'Montserrat', sans-serif;
+		margin-left: 27%
+	}
+	
+	.video1{
+		height: 25%;
+		width: 80%;
+		background-color: black;
+		float: left;
+		margin-left: 10%;
+		
+	}
+	.video2{
+		height: 25%;
+		width: 80%;
+		background-color:black;
+		float: left;
+		margin-left: 10%;
+		margin-top: 3%
+	}
+	.video3{
+		height: 25%;
+		width: 80%;
+		background-color:black;
+		float: left;
+		margin-left: 10%;
+		margin-top: 3%
+	}
+	
+	.footer1{
+		height: 10%;
+		width: 100%;
+		background-color: black;
+		float: left
+	}
+	.footer2{
+		height: 15%;
+		width: 100%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		
+	}
+	.usefullink{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left
+	}
+	
+	.usefullink h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%;
+	}
+	.usefullink ul {
+		color: white;
+		list-style-type: none;
+		
+	}
+	.usefullink ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.usefullink ul li:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.quicklinks{
+		height:100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left
+	}
+	.quicklinks h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.quicklinks ul {
+		color: white;
+		list-style-type: none;	
+	}
+	.quicklinks ul li{
+		border-bottom: 1px solid rgba(119,119,119,0.3);
+		margin: 0px 0px 20px 0px
+	}
+	.quicklinks ul li:hover {
+		color: orange;
+		cursor: pointer
+	}
+	.adress{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+		
+	}
+	.adress h2{
+		color:white;
+		font-size: 20px;
+		margin-left: 11%
+	}
+	.adress p{
+	    padding: 0% 0% 0% 11%;
+		margin-top: -1%;
+		color:#646363;
+		
+	}
+	.map{
+		height: 100%;
+		width: 25%;
+		background-color:rgb(0,0,0,0.8);
+		float: left;
+	}
+	
+</style>
+</head>
+
+<body>
+<div class="container">
+		<div class="navbar">
+       <ul>
+       <li>
+       	<li><a href="#">HOME</a></li>
+       	<li id="flip"><a href="#">GALLERY</a>
+       	<ul id="panel">
+       		<div id="img1">
+       			<img src="654a9c6293d695d5aa89f0d798542c6e.jpg" height="100%" width="100%">
+       		</div>
+       		<div id="img2">
+       			<img src="dv885069-1024x1024.jpg" height="100%" width="100%">
+       		</div>
+       		<div id="img3">
+       			<img src="FA14002.0.FA14002BZ.jpg" height="100%" width="100%">
+       		</div>
+       		<div id="img4">
+       			<img src="a8168b0392b8a3075ee3761ab707089f.jpg" height="100%" width="100%">
+       		</div>
+       		<div id="img5">
+       			<img src="9c0484f79c27c904e7359762148853f5.jpg" height="100%" width="100%">
+       		</div>
+       		<div id="img6">
+       			<img src="1e37241ac7ee451052b157738d7acee2.jpg" height="100%" width="100%">
+       		</div>
+       		<div id="img7"></div>
+       		
+       		
+       		
+       	</ul>
+       	</li>
+       	<li clas><a href="#">FANS</a>
+       	<div class="arrow"></div>
+			<ul >
+      		<li><a href="#"> Pedestal Fan</a></li>
+       		<li ><a href="#"> Celling Fan </a></li>
+       		<li><a href="#">   louvre Fan  </a></li>
+       		<li><a href="#">    Table Fan   </a></li>
+       		<li><a href="#">     Mist Fan    </a></li>
+       	</ul>
+       	</li>
+       	<li><a href="#">ABOUT US</a></li>
+       	<li><a href="#">CONTACT US</a></li>
+       	<li><a href="#">FEEDBACK</a></li>
+       	</li>
+       </ul>
+       </div>
+	<div class="slider">
+	 <div class="ineer">
+		 <img src="20180118082011c1.jpg">
+		 
+		 </div>
+	</div>
+	<div class="content">
+	<div class="h1"><h1>TV Commercials and Corporate Videos!</h1></div>
+	<div class="video1">
+		<video src="factorytourvideo/Pak Fan   Deewana TVC 60 Seconds.mp4" autoplay controls loop height="100%" width="100%"></video>
+	</div>
+	<div class="video2">
+		<video src="factorytourvideo/Pak Fan TVC - 60 Seconds.mp4" autoplay controls loop height="100%" width="100%"></video>
+	</div>
+	<div class="video3">
+		<video src="factorytourvideo/Pak Fans Factory Tour.mp4" autoplay controls loop height="100%" width="100%"></video>
+	</div>
+       	
+       	
+   
+		
+	</div>
+
+
+<div class="footer1">
+	<img src="Capture.PNG" height="100%" width="100%">
+</div>
+<div  class="footer2">
+<div class="usefullink">
+<h2>Useful Link</h2>
+	<ul>
+		<li>Home</li>
+		<li>Company</li>
+		<li>Privacy Policy</li>
+		<li>Contact Us</li>
+	</ul>
+	</div>
+	<div class="quicklinks">
+		<h2>Quick Link</h2>
+	<ul>
+		<li>International Inquiries</li>
+		<li>Responsibility</li>
+		<li>Lifetime Guarantee</li>
+	</ul>
+	</div>
+	<div class="adress">
+		<h2>Factory Adress</h2>
+		<p>I.I Chundrigar Rd Karachi,Pakistan</p>
+		<p>Phone:03420803886</p>
+		<p>Phone:03112884646</p>
+		<p>Phone:03312524916</p>
+		
+	</div>
+	<div class="map"></div>
+	<div class="social">
+
+</div>
+</div>	
+</div>
+</body>
+</html>

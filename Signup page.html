@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signp Form</title>
+<style>
+	body{
+		background-image:url( retro-floor-fan-vintage-on-the-refreshing-air-wallpaper-background-stock-footage-video-standing-fans.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	.Container{
+		width: 350px;
+		margin: auto;
+		margin-top: 50px;
+		padding: 5px;
+	}
+	form{
+		padding: 10px;
+		font-family: arial;
+		border: 1px dotted white;
+		margin: 10px;
+		
+	}
+	h2{
+		text-align: center;
+		background-color: orange;
+		color: white;
+		padding: 10px;
+		border-radius: 10px;
+	}
+	input{
+		padding: 10px;
+		margin: 5px;
+		background:transparent;
+		border: none;
+		
+	}
+	input[type=text], input[type=email], input[type=number], input[type=password]{
+		width: 90%;
+		border-bottom: 1px solid black;
+		color: white;
+	}
+	input[type=submit]{
+		width: 95%;
+		background: orange;
+		cursor: pointer;
+		font-size: 18px;
+		font-weight: bold;
+		color: white;
+		transition: 1s
+	}
+	input[type=submit]:hover{
+		background: transparent;
+		border: 1px solid white
+	}
+	select{
+		padding: 10px;
+		width: 32%;
+		border-radius: 5px;
+	}
+</style>
+</head>
+<body>
+	<div class="Container">
+		<form action="index.html">
+			<h2>Signup</h2>
+			<input type="text" name="name" placeholder="Your Name" pattern="[A-Za-z_\-\.]{3,15}" required id="name">
+			<input type="email" name="email" placeholder="Your Email" id="mail">
+			<input type="number" name="number" placeholder="Mobile Number" id="contact">
+			<input type="password" name="password" placeholder="Password" id="password">
+			<input type="password" name="confirm password" placeholder="Confirm Password" id="conform password">
+			<br>
+			<br>
+			<span style="font-size: 18px;"> Date of Birth </span>
+			<br>
+
+			<select name="DoB Month">
+				<option> Month </option>
+				<option value="January"> January </option>
+				<option value="February"> February </option>
+				<option value="March"> March </option>
+				<option value="April"> April </option>
+				<option value="May"> May </option>
+				<option value="June"> June </option>
+				<option value="July"> July </option>
+				<option value="August"> August </option>
+				<option value="September"> September </option>
+				<option value="October"> October </option>
+				<option value="November"> November </option>
+				<option value="December"> December </option>
+			</select>
+
+			<select name="DoB Day">
+				<option> Day </option>
+				<option value="1"> 1 </option>
+				<option value="2"> 2 </option>
+				<option value="3"> 3 </option>
+				<option value="4"> 4 </option>
+				<option value="5"> 5 </option>
+				<option value="6"> 6 </option>
+				<option value="7"> 7 </option>
+				<option value="8"> 8 </option>
+				<option value="9"> 9 </option>
+				<option value="10"> 10 </option>
+				<option value="11"> 11 </option>
+				<option value="12"> 12 </option>
+			</select>
+
+			<select name="DoB Year">
+				<option> Year </option>
+				<option value="2000"> 2000 </option>
+				<option value="1990"> 1999 </option>
+				<option value="1990"> 1998 </option>
+				<option value="1990"> 1997 </option>
+				<option value="1990"> 1996 </option>
+				<option value="1990"> 1995 </option>
+				<option value="1990"> 1994 </option>
+				<option value="1990"> 1993 </option>
+				<option value="1990"> 1992 </option>
+				<option value="1990"> 1991 </option>
+				<option value="1990"> 1990 </option>
+			</select>
+			<br>
+			<br>
+
+			<input type="radio" name="gender"> Male
+			<input type="radio" name="gender"> Female
+			<br>
+
+			<input type="checkbox"> I agree
+			<br>
+			<input type="submit" value="Submit Now" onClick="validation()">
+
+			
+		</form>
+			 
+	</div>
+</body>
+</html>
+
+<script>
+
+		function validation()
+		{
+		var vname=document.getElementById('name').value;
+		var vmail=document.getElementById('mail').value;
+		var vcontact=document.getElementById('contact').value;
+		var vpassword=document.getElementById('password').value;
+		var vconfpswrd=document.getElementById('conform password').value;
+
+		var dname=/^([A-Za-z_\-\.]{3,15})$/;
+		var dmail= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+		if(vname == "")
+			{
+			alert("Please Enter Your Name");
+			}
+
+		else if(dname.test(vname) == false)
+			{
+			alert("Enter Your Name in Corrector");
+			}
+
+		else if(vmail == "")
+			{
+			alert("Please Enter Your Email");
+			}
+
+		else if(dmail.test(vmail) == false)
+			{
+				alert("Enter Your Correct Email");
+			}
+
+		else if(vcontact == "")
+			{
+				alert("Please Enter Your Contact");
+			}
+
+		
+		else if(vpassword == "")
+			{
+				alert("Please Enter Your Password");
+			}
+
+		else if(vconfpswrd =="")
+			{
+				alert("Enter Your Correct Password");
+			}
+			else{
+				alert("Thankyou For Dealer Ship");
+			}
+		}
+</script>
